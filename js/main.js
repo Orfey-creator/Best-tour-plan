@@ -62,7 +62,7 @@ $(document).ready(function () {
 
   $(document).on('keydown', function (e) {
     if (e.keyCode == 27)
-      var modalOverlay = $(".modal__overlay");
+    var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.removeClass("modal__overlay-visible");
     modalDialog.removeClass("modal__dialog-visible");
@@ -127,3 +127,7 @@ $('.form').each(function(){
 
   $('.phone__us').mask('+7(000) 000-00-00');
   AOS.init();
+
+$('.map').mouseenter(function(){
+  $('.map').append('<iframe data-aload src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143823.78876146488!2d37.24753281714559!3d55.71946476346786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5481b0f9c9949%3A0x1aa05ec2e60a61bf!2sDoubleTree%20by%20Hilton%20Hotel%20Moscow%20-%20Marina!5e0!3m2!1sru!2sru!4v1596627080906!5m2!1sru!2sru" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>')
+});
