@@ -1,0 +1,24 @@
+$primary: #EC1F46
+$text-color: #333333
+$dark: #0A223D
+$white: #fff
+$body-color: #F5FAFE
+$footer-text-color: #BDBDBD
+@mixin swiper-button__mix($image)
+  position: absolute
+  z-index: 10
+  top: 50%
+  transform: translateY(-50%)
+  width: 30px
+  height: 30px
+  border: none
+  background-image: $image
+  background-repeat: no-repeat
+  background-position: center
+  background-size: 10px
+  background-color: transparent
+  &__next
+    right: 18px
+    transform: translateY(-50%) rotate(180deg)
+    &__prev
+      left: 18px
