@@ -14,10 +14,12 @@
       visibility: visible
       opacity: 1
   &__dialog
+    
     position: fixed
     top: 50%
     left: 50%
     max-width: 478px
+    max-height: 487px
     padding: 33px 88px
     background-color: $dark
     border-radius: 8px
@@ -41,7 +43,8 @@
     font-weight: bold
     font-size: 18px
     line-height: 23px
-    margin-bottom: 15px
+    margin-bottom: 0
+    margin-top: 0
     text-transform: uppercase
     text-align: center
   &__input
@@ -49,8 +52,8 @@
     margin-top: 15px
   &__message
     width: 100%
-    min-height: 123px
-    margin-top: 18px
+    max-height: 123px
+    margin-top: 15px
   &__button
     margin-top: 15px
   &__info
