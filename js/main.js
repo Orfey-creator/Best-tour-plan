@@ -122,7 +122,8 @@ $(".form").each(function () {
 
 
 $("#phone__us").mask("+7(000) 000-00-00");
-AOS.init();
+$("#phone__us-modal").mask("+7(000) 000-00-00");
+
 
 $(".map").mouseenter(function () {
   $(".map").append(
