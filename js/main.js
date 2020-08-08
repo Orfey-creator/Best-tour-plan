@@ -102,6 +102,9 @@ $(document).ready(function () {
 $(".form").each(function () {
   $(this).validate({
     errorClass: "invalid",
+    rules: {
+      email: true,
+    },
     messages: {
       name: {
         required: "Укажите имя",
@@ -110,6 +113,7 @@ $(".form").each(function () {
       email: {
         required: "Нам нужна ваша почта для связи",
         email: "Формат почты name@domain.com",
+        
       },
       phone: {
         required: "Телефон обязателен",
