@@ -117,9 +117,7 @@ $(".form").each(function () {
       phone: {
         required: "Enter phone",
       },
-      message: {
-        required: "Enter message",
-      },
+      
     },
   });
 });

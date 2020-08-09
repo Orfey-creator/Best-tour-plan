@@ -11,6 +11,8 @@
     &-card
       width: 230px
       height: 230px
+      &__title
+        font-size: 14px
   .row
     &-card
       &__info
@@ -43,7 +45,11 @@
     &__legal
       grid-row: 2/3
       grid-column: 4/5
-      
+  .footer__input-group label
+  position: absolute
+  top: 55px
+  width: 100% 
+  transform: translate(-100%)
   
 @media (max-width: 992px)
   .container, .newsletter-wrapper
@@ -94,6 +100,8 @@
       width: 339px
       height: 255px
       margin-bottom: 20px
+      &__title
+        font-size: 16px
   .grid
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 
   .footer
@@ -435,3 +443,7 @@
       margin-bottom: 5px
   .message
     padding: 12px 20px
+  .modal__input-group label
+    position: absolute
+    width: 100% 
+    transform: translate(-100%, 60px)
