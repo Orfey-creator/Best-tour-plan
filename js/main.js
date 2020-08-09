@@ -107,18 +107,18 @@ $(".form").each(function () {
     },
     messages: {
       name: {
-        required: "Укажите имя",
-        minlength: "Минимум 2 буквы",
+        required: "Enter name",
+        minlength: "2 letters minimum",
       },
       email: {
-        required: "Введите почту",
-        email: "Формат почты name@domain.com",
+        required: "Enter email",
+        email: "Format name@domain.com",
       },
       phone: {
-        required: "Телефон обязателен",
+        required: "Enter phone",
       },
       message: {
-        required: "Введите сообщение",
+        required: "Enter message",
       },
     },
   });
