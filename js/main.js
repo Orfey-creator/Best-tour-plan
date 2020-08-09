@@ -41,11 +41,11 @@ $(document).ready(function () {
 
   var modalButton = $("[data-toggle=modal]");
   var closeModalButton = $(".modal__close");
+  var modalOverlay = $(".modal__overlay");
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
 
   function openModal() {
-    var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
     modalOverlay.addClass("modal__overlay-visible");
     modalDialog.addClass("modal__dialog-visible");
@@ -60,10 +60,11 @@ $(document).ready(function () {
   }
 
   $(document).on("keydown", function (e) {
-    if (e.keyCode == 27) var modalOverlay = $(".modal__overlay");
-    var modalDialog = $(".modal__dialog");
-    modalOverlay.removeClass("modal__overlay-visible");
-    modalDialog.removeClass("modal__dialog-visible");
+    if (e.keyCode == 27) {
+      var modalDialog = $(".modal__dialog");
+      modalOverlay.removeClass("modal__overlay-visible");
+      modalDialog.removeClass("modal__dialog-visible");
+    }
   });
 
   // Отправка данных на сервер
@@ -117,7 +118,7 @@ $(".form").each(function () {
       phone: {
         required: "Enter phone",
       },
-      
+
     },
   });
 });
