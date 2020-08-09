@@ -1101,7 +1101,8 @@
           ><img src="img/close.svg" loading="lazy" alt="icon: close"
         /></a>
         <form action="send.php" class="modal__form form" method="POST">
-          <input
+          <div class="modal__input-group">
+            <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name"
@@ -1109,7 +1110,9 @@
             required
             minlength="2"
           />
-          <input
+          </div>
+          <div class="modal__input-group">
+            <input
             type="text"
             id="phone__us-modal"
             class="input modal__input"
@@ -1118,20 +1121,26 @@
             required
             minlength="17"
           />
-          <input
+          </div>
+          <div class="modal__input-group">
+            <input
             type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
             required
           />
-          <textarea
+          </div>
+          <div class="modal__input-group">
+            <textarea
             cols="30"
             rows="10"
             class="message modal__message"
             placeholder="Message"
             name="message"
+            required
           ></textarea>
+          </div>
           <button class="button modal__button" type="submit">Send</button>
           <span class="modal__info">* Required Fields</span>
         </form>

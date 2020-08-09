@@ -405,6 +405,7 @@
   .modal
     &__dialog
       padding: 33px 40px
+      width: 100%
 
 @media ( max-height: 485px )
   .modal
@@ -414,10 +415,18 @@
       width: 100%
       display: flex
       flex-flow: wrap
+      padding: 33px 40px
     &__input
-      width: 47%
-      font-size: 14px
+      width: 100%
+      font-size: 12px
+      height: 11vh
+      &-group
+        width: 47%
+        
     &__message
-      flex-basis: 47%
-      height: 50px
-      font-size: 14px
+      width: 100%
+      height: 11vh
+      font-size: 12px
+      margin-bottom: 5px
+  .message
+    padding: 7px 20px

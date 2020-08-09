@@ -108,15 +108,17 @@ $(".form").each(function () {
     messages: {
       name: {
         required: "Укажите имя",
-        minlength: "Имя должно быть не короче двух букв",
+        minlength: "Минимум 2 буквы",
       },
       email: {
-        required: "Нам нужна ваша почта для связи",
+        required: "Введите почту",
         email: "Формат почты name@domain.com",
-        
       },
       phone: {
         required: "Телефон обязателен",
+      },
+      message: {
+        required: "Введите сообщение",
       },
     },
   });
